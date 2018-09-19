@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">Welcome to my first flask application.</p>
+  <hr class="my-4">
+  <p>I'm learning Python and Flask!! Yay! Special thanks to Traversy Media</p>
+  {% if session.logged_in == NULL %}
+  <a class="navbar-brand" href="/login">Login</a>
+  <a class="navbar-brand" href="/register">Register</a>     
+  {% endif %}
+</div>
+{% endblock %}
